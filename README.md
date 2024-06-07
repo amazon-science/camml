@@ -1,4 +1,4 @@
-## My Project
+## CaMML
 
 TODO: Fill this README out!
 
