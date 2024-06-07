@@ -77,8 +77,8 @@ pip install flash-attn --no-build-isolation
 
 |   Model   | Image Size |       LLM       |   Vision Encoder    | CaMML Retrieval Model | CaMML Retrieval Data |   Train Data    | Finetuning Schedule |                              Model Download                              |  
 |:---------:|:----------:|:---------------:|:-------------------:|:---------------------:|----------------------|:---------------:|:-------------------:|:------------------------------------------------------------------------:|
-| CaMML-7B  |    224     | Vicuna-7B-v1.3  | CLIP-ViT-L-14-224px |    ImageBind-Huge     | ScienceQA train      | ScienceQA train |  ft_12epochs_2e-5   | [checkpoint](https://camml.s3.us-west-2.amazonaws.com/camml_7b_sqa_ft/)  |
-| CaMML-13B |    224     | Vicuna-13B-v1.3 | CLIP-ViT-L-14-224px |    ImageBind-Huge     | ScienceQA train      | ScienceQA train |  ft_12epochs_2e-5   | [checkpoint](https://camml.s3.us-west-2.amazonaws.com/camml_13b_sqa_ft/) |
+| CaMML-7B  |    224     | Vicuna-7B-v1.3  | CLIP-ViT-L-14-224px |    ImageBind-Huge     | ScienceQA train      | ScienceQA train |  ft_12epochs_2e-5   | [checkpoint]()  |
+| CaMML-13B |    224     | Vicuna-13B-v1.3 | CLIP-ViT-L-14-224px |    ImageBind-Huge     | ScienceQA train      | ScienceQA train |  ft_12epochs_2e-5   | [checkpoint]() |
 
 
 ### Instruction Finetuning
@@ -86,8 +86,8 @@ pip install flash-attn --no-build-isolation
 
 |   Model   | Image Size |       LLM       |   Vision Encoder    | CaMML Retrieval Model | CaMML Retrieval Data  |   Train Data    | Finetuning Schedule |                          Model Download                           |  
 |:---------:|:----------:|:---------------:|:-------------------:|:---------------------:|:---------------------:|:---------------:|:-------------------:|:-----------------------------------------------------------------:|
-| CaMML-7B  |    336     | Vicuna-7B-v1.5  | CLIP-ViT-L-14-336px |    ImageBind-Huge     |    LLaVA-v1.5-665K    | LLaVA-v1.5-665K |   ft_1epoch_2e-5    | [checkpoint](https://camml.s3.us-west-2.amazonaws.com/camml_7b/)  |
-| CaMML-13B |    336     | Vicuna-13B-v1.5 | CLIP-ViT-L-14-336px |    ImageBind-Huge     |    LLaVA-v1.5-665K    | LLaVA-v1.5-665K |   ft_1epoch_2e-5    | [checkpoint](https://camml.s3.us-west-2.amazonaws.com/camml_13b/) |
+| CaMML-7B  |    336     | Vicuna-7B-v1.5  | CLIP-ViT-L-14-336px |    ImageBind-Huge     |    LLaVA-v1.5-665K    | LLaVA-v1.5-665K |   ft_1epoch_2e-5    | [checkpoint]()  |
+| CaMML-13B |    336     | Vicuna-13B-v1.5 | CLIP-ViT-L-14-336px |    ImageBind-Huge     |    LLaVA-v1.5-665K    | LLaVA-v1.5-665K |   ft_1epoch_2e-5    | [checkpoint]() |
 
 ## Preparation
 
@@ -307,19 +307,19 @@ python camml/eval/run_camml.py --query $QUESTION --image-file $IMAGE_PATH
 #### ScienceQA test
 |                                     Model                                      | AVG.  |  IMG  |  TXT  |
 |:------------------------------------------------------------------------------:|:-----:|:-----:|:-----:|
-|  [CaMML-7B-sqa-FT](https://camml.s3.us-west-2.amazonaws.com/camml_7b_sqa_ft/)  | 91.32 | 89.24 | 93.21 |
-| [CaMML-13B-sqa-FT](https://camml.s3.us-west-2.amazonaws.com/camml_13b_sqa_ft/) | 92.03 | 89.94 | 93.84 |
+|  [CaMML-7B-sqa-FT]()  | 91.32 | 89.24 | 93.21 |
+| [CaMML-13B-sqa-FT]() | 92.03 | 89.94 | 93.84 |
 
 #### Vision-Language benchmarks
 |     Model     |    LLM     | VQAv2 | GQA  | VizWiz | SQA(I) | TextVQA | POPE |  MME   | MMBench | MMBench-CN | SEED | MM-Vet |
 |:-------------:|:----------:|:-----:|:----:|:------:|:------:|:-------:|:----:|:------:|:-------:|:----------:|:----:|:------:|
-| [CaMML-7B](https://camml.s3.us-west-2.amazonaws.com/camml_7b/)  | Vicuna-7B  | 79.4  | 62.7 |  51.2  |  67.9  |  58.0   | 86.4 | 1506.9 |  66.9   |    60.6    | 60.4 |  32.2  |
-| [CaMML-13B](https://camml.s3.us-west-2.amazonaws.com/camml_13b/) | Vicuna-13B | 80.2  | 63.7 |  57.4  |  72.3  |  59.9   | 86.7 | 1588.7 |  70.2   |    63.6    | 62.3 |  36.4  |
+| [CaMML-7B]()  | Vicuna-7B  | 79.4  | 62.7 |  51.2  |  67.9  |  58.0   | 86.4 | 1506.9 |  66.9   |    60.6    | 60.4 |  32.2  |
+| [CaMML-13B]() | Vicuna-13B | 80.2  | 63.7 |  57.4  |  72.3  |  59.9   | 86.7 | 1588.7 |  70.2   |    63.6    | 62.3 |  36.4  |
 
 |     Model     |    LLM     | COCO Cap (CIDEr) | Flickr30K Cap (CIDEr) | OKVQA (Acc) | AOKVQA (MC-Acc) | RefCOCO (Acc) | RefCOCO+ (Acc) | RefCOCOg (Acc) |
 |:-------------:|:----------:|:----------------:|:---------------------:|:-----------:|:---------------:|:-------------:|----------------|----------------|
-| [CaMML-7B](https://camml.s3.us-west-2.amazonaws.com/camml_7b/)  | Vicuna-7B  |      111.4       |         82.7          |    64.7     |      81.1       |     66.6      | 60.3           | 57.6           |
-| [CaMML-13B](https://camml.s3.us-west-2.amazonaws.com/camml_13b/) | Vicuna-13B |      116.8       |         84.5          |    66.3     |      82.0       |     70.6      | 65.9           | 60.5           |
+| [CaMML-7B]()  | Vicuna-7B  |      111.4       |         82.7          |    64.7     |      81.1       |     66.6      | 60.3           | 57.6           |
+| [CaMML-13B]() | Vicuna-13B |      116.8       |         84.5          |    66.3     |      82.0       |     70.6      | 65.9           | 60.5           |
 
 #### Eval scripts
 CaMML supports up to 19 tasks, you can find them in ```scripts/evaluation```.
@@ -347,7 +347,7 @@ If you find CaMML useful for your research and applications, please cite using t
       title={CaMML: Context-Aware Multimodal Learner for Large Models}, 
       author={Yixin Chen and Shuai Zhang and Boran Han and Tong He and Bo Li},
       year={2024},
-      journal={The 62nd Annual Meeting of the Association for Computational Linguistics, ACL 2024},
+      journal={The 62nd Annual Meeting of the Association for Computational Linguistics},
       eprint={2401.03149},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
