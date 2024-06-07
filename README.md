@@ -1,4 +1,4 @@
-# <img height="28" src="images/camml_logo.jpg" width="28"/>CaMML: Context-Aware MultiModal Learner for Large Models
+# <img height="28" src="images/camml_logo.jpg" width="28"/>CaMML: Context-Aware MultiModal Learner for Large Models (ACL 2024)
 [![](https://img.shields.io/badge/Paper-Arxiv-blue?link=https%3A%2F%2Farxiv.org%2Fabs%2F2401.03149)](http://arxiv.org/abs/2401.03149)
 [![](https://img.shields.io/badge/Project-Page-cyan
 )](https://camml-project.github.io/)
@@ -10,7 +10,7 @@
 )](https://github.com/yix-chen/camml?tab=readme-ov-file#camml-models)
 [![](https://img.shields.io/badge/Cite-Bibtex-yellow)](https://github.com/yix-chen/camml?tab=readme-ov-file#citation)
 
-Yixin Chen<sup>1</sup>, Shuai Zhang<sup>2</sup>, Boran Han<sup>2</sup>, Tong He<sup>2</sup> and Bo Li<sup>2,3</sup>.
+[Yixin Chen](https://yix-chen.github.io/)<sup>1</sup>, [Shuai Zhang](https://shuaizhang.tech/)<sup>2</sup>, [Boran Han](https://boranhan.github.io/)<sup>2</sup>, [Tong He](https://hetong007.github.io/)<sup>2</sup> and [Bo Li](https://aisecure.github.io/)<sup>2,3</sup>.
 
 <sup>1</sup>The Chinese University of Hong Kong, <sup>2</sup>Amazon Web Services, <sup>3</sup>University of Chicago
 
@@ -347,6 +347,7 @@ If you find CaMML useful for your research and applications, please cite using t
       title={CaMML: Context-Aware Multimodal Learner for Large Models}, 
       author={Yixin Chen and Shuai Zhang and Boran Han and Tong He and Bo Li},
       year={2024},
+      journal={The 62nd Annual Meeting of the Association for Computational Linguistics, ACL 2024},
       eprint={2401.03149},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
