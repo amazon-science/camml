@@ -14,6 +14,8 @@
 
 <sup>1</sup>The Chinese University of Hong Kong, <sup>2</sup>Amazon Web Services, <sup>3</sup>University of Chicago
 
+We received the [SAC Awards](https://2024.aclweb.org/program/best_papers/#sac-awards) from ACL 2024. <br/><br/>
+
 [//]: # (<img height="300" src="images/framework_v4.jpg" width="700"/>)
 ![](images/framework_v4.jpg)
 ![](images/performance_radar_text.jpg)
